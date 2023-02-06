@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/dashboard.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="left">
+                <img src="assets/icons/logo used in header.svg" class="logo-img">
+            </div>
+            <div class="right">
+                <ul class="navbar">
+                    <a href="#"><li class="active-white">DASHBOARD</li>
+                    <a href="#"><li>CONTENT</li></a>
+                    <a href="#"><li>USERS</li></a>
+                    <a href="#"><li>REPORTS</li></a>
+                    <a href="#"><li>ADMIN</li></a>
+                </ul>
+                <div class="icon-link-div">
+                    <div>
+                        <a href="#"><img style="height: 24px; width: 21px;" src="assets/icons/alerts.svg" alt=""></a>
+                        <span class="dark-badge">2</span>
+                    </div>
+                    <div>
+                        <a href="#"><img style="height: 20px; width: 20px;" src="assets/icons/announcements.svg" alt=""></a>
+                        <span class="dark-badge">1</span>
+                    </div>
+                    <div>
+                        <a href="#"><img style="height: 32px; width: 32px;" src="assets/icons/account_circle.svg" alt=""></a>
+                        <span class="light-badge">T</span>
+                    </div>
+                </div>
+                <div class="hamburgmenu">
+                    <img src="assets/icons/hamburger-menu.svg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            
+            <div class="tabbar">
+                <div class="tab active-black">
+                    <div class="center-div">
+                        <img style="width: 21px; height: 32px;" src="assets/icons/courses.svg" alt="">
+                        <span style="font-size: 24px;" class="bold">4</span>Courses
+                    </div>
+                </div>
+                <div class="tab">
+                    <div class="center-div">
+                        <img style="width: 21px; height: 32px;" src="assets/icons/classes.svg" alt="">
+                        <span style="font-size: 24px;" class="bold">4</span>Classes
+                    </div>
+                </div>
+            </div>
+
+            <div class="result">
+                <div class="left-result">
+                    Showing 4 of 4 courses
+                </div>
+                <div class="right-result">
+                    Sort By : 
+                    <select name="course" id="course">
+                        <option value="Course Name">Course Name</option>
+                    </select>
+                    <img class="sort-icon" src="assets/icons/sort.svg" alt="">
+                </div>
+            </div>
+
+            
+                <div class="card-display">
+
+                    <div class="card">
+                        <img src="assets/images/imageMask-1.svg" alt="" class="card-img">
+                        <div class="details">
+                            <div class="space-between mb-7">
+                                <p class="detail-heading bold">Acceleration</p>
+                                <img src="assets/icons/favourite.svg" alt="" srcset="">
+                            </div>
+
+                            <div class="sub-info">
+                                <p style="color: #666666; font-size: 12px;" class="mb-7">Physics Grade <span style="color: #1F7A54;">7 +2</span></p>
+                                <p style="color: #666666; font-size: 12px;" class="mb-18"> <span class="dark bold">4</span> Units <span class="dark bold">18</span> lessons <span class="dark bold">24</span> topics</p>
+                            </div>
+
+                            <div class="teacher-info">
+                                <div class="space-between">
+                                    <p class="teacher">Mr. Frank's Class B</p>
+                                    <img src="assets/icons/arrow-down.svg" alt="" srcset="">
+                                </div>
+                            </div>
+
+                            <div class="course-info">
+                                <span style="margin-right: 17px;">50 Students</span> <span>21-jan-2020 21-Aug-2020</span>
+                            </div>
+                        </div>
+                        <div class="card-icons">
+                            <img style="height: 24px; width: 22px;" src="assets/icons/preview.svg" alt="" srcset="">
+                            <img style="height: 18px; width: 16px;" src="assets/icons/manage course.svg" alt="" srcset="">
+                            <img style="height: 20px; width: 16px;" src="assets/icons/grade submissions.svg" alt="" srcset="">
+                            <img style="height: 24px; width: 22px;" src="assets/icons/reports.svg" alt="" srcset="">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/images/imageMask-2.svg" alt="" class="card-img">
+                        <div class="details">
+                            <div class="space-between mb-7">
+                                <p class="detail-heading bold">Displacement, Velocity and Speed</p>
+                                <img src="assets/icons/favourite.svg" alt="" srcset="">
+                            </div>
+
+                            <div class="sub-info">
+                                <p style="color: #666666; font-size: 12px;" class="mb-7">Physics 2 Grade <span style="color: #1F7A54;">6 +3</span></p>
+                                <p style="color: #666666; font-size: 12px;" class="mb-18"> <span class="dark bold">2</span> Units <span class="dark bold">15</span> lessons <span class="dark bold">20</span> topics</p>
+                            </div>
+
+                            <div class="teacher-info">
+                                <div class="space-between">
+                                    <p class="teacher">No Classes</p>
+                                    <img src="assets/icons/arrow-down.svg" alt="" srcset="">
+                                </div>
+                            </div>
+
+                            <!-- <div class="course-info">
+                                <span style="margin-right: 17px;">50 Students</span> <span>21-jan-2020 21-Aug-2020</span>
+                            </div> -->
+                        </div>
+                        <div class="card-icons">
+                            <img style="height: 24px; width: 22px;" src="assets/icons/preview.svg" alt="" srcset="">
+                            <img style="height: 18px; width: 16px;" src="assets/icons/manage course.svg" alt="" srcset="">
+                            <img style="height: 20px; width: 16px;" src="assets/icons/grade submissions.svg" alt="" srcset="">
+                            <img style="height: 24px; width: 22px;" src="assets/icons/reports.svg" alt="" srcset="">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/images/imageMask.svg" alt="" class="card-img">
+                        <div class="details">
+                            <div class="space-between mb-7">
+                                <p class="detail-heading bold">Introduction to Biology: Microorganisms and how they affect...</p>
+                                <img src="assets/icons/favourite.svg" alt="" srcset="">
+                            </div>
+
+                            <div class="sub-info">
+                                <p style="color: #666666; font-size: 12px;" class="mb-7">Biology Grade <span style="color: #1F7A54;">4 +1</span></p>
+                                <p style="color: #666666; font-size: 12px;" class="mb-18"> <span class="dark bold">5</span> Units <span class="dark bold">16</span> lessons <span class="dark bold">22</span> topics</p>
+                            </div>
+
+                            <div class="teacher-info">
+                                <div class="space-between">
+                                    <p class="teacher">All Classes</p>
+                                    <img src="assets/icons/arrow-down.svg" alt="" srcset="">
+                                </div>
+                            </div>
+
+                            <div class="course-info">
+                                <span style="margin-right: 17px;">50 Students</span> 
+                            </div>
+                        </div>
+                        <div class="card-icons">
+                            <img style="height: 24px; width: 22px;" src="assets/icons/preview.svg" alt="" srcset="">
+                            <img style="height: 18px; width: 16px;" src="assets/icons/manage course.svg" alt="" srcset="">
+                            <img style="height: 20px; width: 16px;" src="assets/icons/grade submissions.svg" alt="" srcset="">
+                            <img style="height: 24px; width: 22px;" src="assets/icons/reports.svg" alt="" srcset="">
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <span class="expireTag">EXPIRED</span>
+                        <img src="assets/images/imageMask-3.svg" alt="" class="card-img">
+                        <div class="details">
+                            <div class="space-between mb-7">
+                                <p class="detail-heading bold">Introduction to High School Mathematics</p>
+                                <!-- <img src="assets/icons/favourite.svg" alt="" srcset=""> -->
+                            </div>
+
+                            <div class="sub-info">
+                                <p style="color: #666666; font-size: 12px;" class="mb-7">Mathematics Grade <span style="color: #1F7A54;">8 +3</span></p>
+                                <!-- <p style="color: #666666; font-size: 12px;" class="mb-18"> <span class="dark bold">4</span> Units <span class="dark bold">18</span> lessons <span class="dark bold">24</span> topics</p> -->
+                            </div>
+
+                            <div class="teacher-info">
+                                <div class="space-between">
+                                    <p class="teacher">Mr. Frank's Class A</p>
+                                    <img src="assets/icons/arrow-down.svg" alt="" srcset="">
+                                </div>
+                            </div>
+
+                            <div class="course-info">
+                                <span style="margin-right: 17px;">44 Students</span> <span>14-Oct-2019 20-Oct-2020</span>
+                            </div>
+                        </div>
+                        <div class="card-icons">
+                            <img style="height: 24px; width: 22px;" src="assets/icons/preview.svg" alt="" srcset="">
+                            <img style="height: 18px; width: 16px;" src="assets/icons/manage course.svg" alt="" srcset="">
+                            <img style="height: 20px; width: 16px;" src="assets/icons/grade submissions.svg" alt="" srcset="">
+                            <img style="height: 24px; width: 22px;" src="assets/icons/reports.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <a href="#" class="right-border">About</a>
+                    <a href="#">Contect Us</a>
+                </div>
+
+            </div>
+
+
+        <!-- Footer -->
+        
+        <div class="footer">
+            <img src="assets/icons/logo used in footer.svg" class="footer-logo logo-img">
+           <p> Copyright @ 2020-2021 Zeus Systems Pvt. Ltd.  All right reserved</p>
+        </div>
+    </div>
+</body>
+</html>

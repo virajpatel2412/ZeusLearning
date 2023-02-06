@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h3 class="main-header">My first web page</h3>
+        <h5 class="sub-header">What this is</h5>
+        <p>Welcome to my first webpage. I created this webpage without the assistance of a webpage of a webpage oditor. Just my little text editor and a keen <span class="bold">UNDERSTANDING OF HTML</span> </p>
+        <h5 class="sub-header">Why this is</h5>
+        <ul>
+            <li>To learn html</li>
+            <li>List element</li>
+            <ol>
+                <li>Home</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ol>
+            <li>Here I have created ordered and unordered list</li>
+        </ul>
+        <h5 class="sub-header">ZeusLearning.com</h5>
+        <a style="text-decoration: none;" href="https://www.zeuslearning.com" target="_blank">This link will open zeuslearning.com in new tab</a>
+        <h5 class="sub-header">On click of following image navigate to Google.com</h5>
+        <a href="https://www.google.com">
+            <img src="https://blog.hubspot.com/hs-fs/hubfs/The%20Secret%20History%20of%20the%20Google%20Logo-4.jpeg?width=528&name=The%20Secret%20History%20of%20the%20Google%20Logo-4.jpeg" alt="">
+        </a>
+
+        <p class="bold mr-10 light-color">Some random table</p>
+
+        <table border="1" class="bold tbl">
+            <tr>
+                <td>Row 1 Cell 1</td>
+                <td>Row 1 Cell 2</td>
+                <td>Row 1 Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2 cell 1</td>
+                <td>Row 2 Cell 2</td>
+                <td>Row 2 Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 3 Cell 1</td>
+                <td>Row 3 Cell 2</td>
+                <td>Row 3 Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 4 Cell 1</td>
+                <td>Row 4 Cell 2</td>
+                <td>Row 4 Cell 3</td>
+            </tr>
+        </table>
+        <p class="mr-10 light-color bold">Some random form</p>
+        <p class="mb-10"><span class="bold">NOTE : </span> It looks the part but won't do a anything.</p>
+
+        <form id="user-form" onsubmit="return validateForm()">
+            <label for="name" class="mr-10">Name : </label><br>
+            <input class="mr-10 input" type="text" name="name" id="name" placeholder="Your name">
+            <br>
+            <label for="comments">Comments : </label><br>
+            <input class="mr-10 light-color" id="comments" placeholder="Your comments" name="comments">
+
+            <br>
+            <label for="selection">Are you : </label>
+            <br>
+            <input class="mr-10" type="radio" name="xender" id="male" value="Male">
+            <label for="male">Male</label>
+            <br>
+            <input class="mr-10" type="radio" name="xender" id="female" value="Female">
+            <label for="female">Female</label>
+
+            <br>
+            <input type="submit" value="Submit Query"/>
+        </form>
+    </div>
+</body>
+
+<script src="validation.js"></script>
+</html>

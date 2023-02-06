@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    font-size: 12px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0E1E1;
+    color: #616161;
+
+    p{
+        padding-left:16px;
+        font-size: 12px;
+        font-weight: bold;
+    }    
+}
+.footer-logo{
+    padding: 0 16px;
+    border-right: 1px solid $borderColor;
+}

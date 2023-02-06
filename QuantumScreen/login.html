@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/login.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="assets/icons/logo used in header.svg" class="logo-img">
+        </div>
+
+
+        <!-- Content -->
+        <div class="content">
+            <div class="login-card">
+                <div class="form-title">
+                    <img src="assets/icons/back.svg" alt="">
+                    <h2>Log in with Quantum</h2>
+                </div>
+                <form action="post" class="login-form">
+                    <div class="radio-input">
+                        <input type="radio" name="level" id="district">
+                        <label for="district">District</label>
+                        <input type="radio" name="level" id="independent">
+                        <label for="independent">independent School</label>
+                    </div>
+
+                    <div class="select mb-36">
+                        <label for="state">State*</label>
+                        <select>
+                            <option value="Alabama">Alabama</option>
+                        </select>
+                    </div>
+
+                    <div class="select mb-61">
+                        <label for="District">District*</label>
+                        <select>
+                            <option value="Alabama School District">Alabama School District</option>
+                        </select>
+                    </div>
+
+                    <div class="credentials mb-33">
+                        <input type="text" name="email" id="email" placeholder="Username/Email ID*" class="full-input">
+                        <p class="forgot">FORGOT USERNAME?</p>
+                    </div>
+
+                    <div class="credentials mb-26">
+                        <input type="password" name="password" id="password" placeholder="Password*" class="full-input">
+                        <p class="forgot">FORGOT PASSWORD?</p>
+                    </div>
+
+                    <div class="input-div align-center mb-34">
+                        <input type="checkbox" name="remember">
+                        <p class="inline">Remember Me</p>
+                    </div>
+
+                    <input type="submit" value="LOG IN">
+                </form>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a class="rightBorder" href="#">About</a>
+            <a href="#">Contect Us</a>
+        </div>
+
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <img src="assets/icons/logo used in footer.svg" class="footer-logo">
+            <p> Copyright @ 2020-2021 <span>Zeus Systems Pvt. Ltd.</span> All right reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>

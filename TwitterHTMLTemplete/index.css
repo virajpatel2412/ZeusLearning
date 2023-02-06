@@ -1,0 +1,54 @@
+body{
+    margin : 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card{
+    display: flex;
+    height: 138px;
+    width: 457px;
+    margin: 20px auto;
+    background-color: white;
+    padding : 2px; 
+}
+
+.profile-img{
+    width: 130px;
+    height: 130px;
+    background-image: url("moshhamedani.jpg");
+    background-size: cover;
+    margin : 0 14px 0 0;
+}
+.profile-detail{
+    display: flex;
+    flex-direction: column;
+}
+.id{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    margin: 14px 0;
+}
+.status{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.icons{
+    display: flex;
+}
+.icon-wrapper{
+    display: flex;
+    margin-right: 24px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #858991;
+}
+.icon{
+    height: 20px;
+    margin: auto 0;
+    margin-right: 14px;
+    background-color: inherit;
+    color: black;
+}
