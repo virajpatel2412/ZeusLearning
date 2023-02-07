@@ -8,7 +8,6 @@
 .header {
   height: 56px;
   background-color: black;
-  opacity: 0.8;
 }
 .header .left {
   float: left;
@@ -76,20 +75,35 @@
   background-color: white;
   color: #222222;
 }
-
 @media screen and (max-width: 860px) {
   .header .right .navbar {
     display: none;
+    position: absolute;
+    right: 0;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    top: 56px;
+    background-color: black;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    padding-bottom: 20px;
   }
   .header .right .icon-link-div {
     margin-right: 32px;
   }
 }
-@media screen and (min-width: 860px) {
-  .hamburgmenu {
+@media screen and (min-width: 861px) {
+  .header .right .hamburgmenu {
     display: none;
   }
+  .header .right .navbar {
+    display: flex !important;
+  }
 }
+
 /*  Content */
 .content {
   background-color: #EEEEEE;
@@ -149,7 +163,7 @@
   -moz-column-gap: 24px;
        column-gap: 24px;
   row-gap: 25px;
-  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
   grid-auto-flow: dense;
   justify-content: center;
 }
@@ -213,8 +227,12 @@
   margin-right: 24px;
   align-items: center;
 }
-@media screen and (max-width: 1010px) {
-  .content .card {
+@media screen and (max-width: 1090px) {
+  .content .card-display {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .card-display .card {
     display: grid;
     width: 571px;
     margin-left: auto;

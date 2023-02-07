@@ -24,9 +24,9 @@ $cardBottomBorderColor: #0000002b;
 .header {
     height: 56px;
     background-color: black;
-    opacity: 0.8;
-    
-    
+    // opacity: 0.8;
+
+
 
     .left {
         float: left;
@@ -56,11 +56,12 @@ $cardBottomBorderColor: #0000002b;
             align-items: center;
             justify-content: space-around;
 
-            a{
+            a {
                 color: $linkTextColor;
                 text-decoration: none;
-                margin-left : 32px;
+                margin-left: 32px;
             }
+
             .active-white {
                 padding: 16px 0;
                 color: white;
@@ -68,24 +69,25 @@ $cardBottomBorderColor: #0000002b;
             }
         }
 
-        .icon-link-div{
+        .icon-link-div {
             display: flex;
             align-items: center;
 
-            a{
+            a {
                 margin-left: 32px;
             }
-            div{
+
+            div {
                 position: relative;
             }
         }
 
-        span{
+        span {
             display: flex;
             justify-content: center;
             align-items: center;
             position: absolute;
-            top:-8px;
+            top: -8px;
             right: -8px;
             width: 17px;
             height: 21px;
@@ -94,33 +96,48 @@ $cardBottomBorderColor: #0000002b;
             background-color: $badgeBackGround;
             color: white;
         }
-        .light-badge{
+
+        .light-badge {
             font-size: 8px;
             background-color: white;
             color: $darkTextColor;
         }
-    }
-}
 
-@media screen and (max-width: 860px) {
-    .header {
-        .right {
+        @media screen and (max-width: 860px) {
             .navbar {
+                display: none;
+                position: absolute;
+                right: 0;
+                height: max-content;
+                top: 56px;
+                background-color: black;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 50px;
+                padding: 0;
+                padding-bottom: 20px;
+            }
+            
+            .icon-link-div {
+                margin-right: 32px;
+            }
+        }
+
+        @media screen and (min-width: 861px) {
+            .hamburgmenu {
                 display: none;
             }
 
-            .icon-link-div{
-                margin-right: 32px;
+            .navbar {
+                display: flex !important;
             }
         }
     }
 }
 
-@media screen and (min-width: 860px) {
-    .hamburgmenu {
-        display: none;
-    }
-}
+
+
+
 
 /*  Content */
 .content {
@@ -186,13 +203,13 @@ $cardBottomBorderColor: #0000002b;
 
 
 
-    .card-display {   
+    .card-display {
         margin: 16px 0;
         width: 100%;
         display: grid;
         column-gap: 24px;
         row-gap: 25px;
-        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
         grid-auto-flow: dense;
         justify-content: center;
 
@@ -209,7 +226,7 @@ $cardBottomBorderColor: #0000002b;
             flex-grow: 1;
             padding: 24px 0 9px 0;
 
-            .expireTag{
+            .expireTag {
                 position: absolute;
                 display: flex;
                 justify-content: center;
@@ -229,30 +246,32 @@ $cardBottomBorderColor: #0000002b;
                 margin-left: 24px;
                 margin-bottom: 16px;
             }
+
             .details {
                 padding-right: 24px;
-                .space-between{
+
+                .space-between {
                     align-items: flex-start;
                 }
             }
-        
+
             .detail-heading {
                 max-height: 40px;
                 overflow-y: clip;
                 color: $darkTextColor;
             }
-        
+
             .teacher-info>.space-between {
                 border-bottom: 1px solid $cardBottomBorderColor;
                 margin-bottom: 8px;
                 color: $darkTextColor;
             }
-        
+
             .course-info {
                 color: #666666;
                 font-size: 12px;
             }
-        
+
             .card-icons {
                 grid-column: 1/3;
                 display: flex;
@@ -265,14 +284,20 @@ $cardBottomBorderColor: #0000002b;
         }
     }
 
-    @media screen and (max-width: 1010px) {
-        .card {
-            display: grid;
-            width: 571px;
-            margin-left: auto;
-            margin-right: auto;
+    @media screen and (max-width: 1090px) {
+        .card-display {
+            display: flex;
+            flex-direction: column;
 
+            .card {
+                display: grid;
+                width: 571px;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
         }
+
     }
 
     .menu {
@@ -289,6 +314,7 @@ $cardBottomBorderColor: #0000002b;
             font-weight: bold;
             padding-right: 8px;
         }
+
         .right-border {
             border-right: 1px solid $borderColor;
         }
