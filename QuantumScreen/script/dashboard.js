@@ -1,4 +1,5 @@
 const display = document.querySelector('.card-display');
+const courseCount = document.getElementById('courseCount');
 
 function generateOptions(list){
     let res;
@@ -12,6 +13,7 @@ let renderCard = async() => {
     let datalist = await fetch('/script/data.json')
         .then((data) => data.json())
         
+    courseCount.innerText = datalist.length;
 
     for(let data of datalist){
         let card = document.createElement('div');
