@@ -37,7 +37,7 @@ body {
 .container .login-card {
   max-width: 488px;
   width: 100vw;
-  max-height: 600px;
+  max-height: 612px;
   background-color: white;
   padding: 0px 32px 24px 32px;
   border-top: 4px solid #3AC7EC;
@@ -85,6 +85,7 @@ body {
   color: #666666;
 }
 .container .login-card form .select select {
+  padding: 5px 0;
   color: #222222;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -94,13 +95,14 @@ body {
   background-size: 25px;
   background-position: calc(100% + 6px) center;
 }
+.container .login-card form .credentials {
+  position: relative;
+}
 .container .login-card form .credentials input {
+  padding-bottom: 5px;
   margin-bottom: 5px;
 }
 .container .login-card form .credentials ::-moz-placeholder {
-  color: #666666;
-}
-.container .login-card form .credentials :-ms-input-placeholder {
   color: #666666;
 }
 .container .login-card form .credentials ::placeholder {
@@ -119,15 +121,23 @@ body {
   margin: 0 auto;
   background-color: #3FD28B;
   border: none;
+  cursor: pointer;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2392156863);
+}
+.container .login-card form .previewIcon {
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
 }
 .container .login-card form select,
 .container .login-card form .full-input {
-  width: 424px;
+  width: 100%;
   border: none;
   border-bottom: 1px solid rgb(222, 222, 222);
 }
 .container .login-card form .forgot {
+  display: block;
+  text-decoration: none;
   text-align: right;
   color: #1F7A54;
   font-size: 14px;

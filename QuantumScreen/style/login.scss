@@ -52,7 +52,6 @@ body {
         background-color: #EEEEEE;
         display: grid;
         min-height: calc(100% - 164px);
-        ;
         justify-content: center;
         padding-top: 50px;
 
@@ -61,8 +60,7 @@ body {
     .login-card {
         max-width: 488px;
         width: 100vw;
-        max-height: 600px;
-
+        max-height: 612px;
         background-color: white;
         padding: 0px 32px 24px 32px;
         border-top: 4px solid $logincardBorder;
@@ -120,6 +118,7 @@ body {
                 }
 
                 select {
+                    padding: 5px 0;
                     color: $darkTextColor;
                     appearance: none;
                     background-image: url('/assets/icons/arrow-down.svg');
@@ -130,7 +129,10 @@ body {
             }
 
             .credentials {
+                position: relative;
+
                 input {
+                    padding-bottom: 5px;
                     margin-bottom: 5px;
                 }
 
@@ -154,17 +156,25 @@ body {
                 margin: 0 auto;
                 background-color: #3FD28B;
                 border: none;
+                cursor: pointer;
                 box-shadow: 0px 3px 5px #0000003D;
+            }
+            .previewIcon{
+                position: absolute;
+                right: 0px;
+                cursor: pointer;
             }
 
             select,
             .full-input {
-                width: 424px;
+                width: 100%;
                 border: none;
                 border-bottom: 1px solid $inputBorderBottom;
             }
 
             .forgot {
+                display: block;
+                text-decoration : none;
                 text-align: right;
                 color: $forgotColor;
                 font-size: 14px;

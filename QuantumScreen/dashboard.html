@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,49 +9,346 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/dashboard.css">
 
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
-        <!-- Header -->
+
+        <!-- Header start-->
         <div class="header">
             <div class="left">
                 <img src="assets/icons/logo used in header.svg" class="logo-img">
             </div>
             <div class="right">
                 <ul class="navbar">
-                    <a href="#"><li class="active-white">DASHBOARD</li>
-                    <a href="#"><li>CONTENT</li></a>
-                    <a href="#"><li>USERS</li></a>
-                    <a href="#"><li>REPORTS</li></a>
-                    <a href="#"><li>ADMIN</li></a>
+                    <a href="#">
+                        <li class="active-white">DASHBOARD</li>
+                        <a href="#">
+                            <li>CONTENT</li>
+                        </a>
+                        <a href="#">
+                            <li>USERS</li>
+                        </a>
+                        <a href="#">
+                            <li>REPORTS</li>
+                        </a>
+                        <a href="#">
+                            <li>ADMIN</li>
+                        </a>
                 </ul>
                 <div class="icon-link-div">
-                    <div>
-                        <a href="#"><img style="height: 24px; width: 21px;" src="assets/icons/alerts.svg" alt=""></a>
+                    <div class='alert-icon'>
+                        <img src="assets/icons/alerts.svg" alt="">
                         <span class="dark-badge">2</span>
                     </div>
-                    <div>
-                        <a href="#"><img style="height: 20px; width: 20px;" src="assets/icons/announcements.svg" alt=""></a>
+                    <div class='announcement-icon'>
+                        <img src="assets/icons/announcements.svg" alt="">
                         <span class="dark-badge">1</span>
                     </div>
                     <div>
-                        <a href="#"><img style="height: 32px; width: 32px;" src="assets/icons/account_circle.svg" alt=""></a>
+                        <img src="assets/icons/account_circle.svg" alt="">
                         <span class="light-badge">T</span>
                     </div>
                 </div>
-                <div class="hamburgmenu">
+                <div class="hamburger-icon">
                     <img src="assets/icons/hamburger-menu.svg" alt="" srcset="">
                 </div>
             </div>
         </div>
+        <!-- Header End  -->
+
+        <!-- hamburger menu start -->
+        <div class="hamburger-menu">
+            <div class="menu-item">
+                <button class="menu-btn">
+                    DASHBOARD
+                    <span>&#10095;</span>
+                </button>
+            </div>
+
+            <div class="menu-item dropdown">
+                <button class="menu-btn">
+                    CONTENT
+                    <span>&#10095;</span>
+                </button>
+                <div class="menu-subItems">
+                    <a href="#">COURSE CATALOG</a>
+                    <a href="#">COURSE CATALOG</a>
+                    <a href="#">COURSE CATALOG</a>
+                </div>
+            </div>
+
+            <div class="menu-item dropdown">
+                <button class="menu-btn">
+                    USERS
+                    <span>&#10095;</span>
+                </button>
+                <div class="menu-subItems">
+                    <a href="#">User1</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <button class="menu-btn">
+                    ADMIN
+                    <span>&#10095;</span>
+                </button>
+            </div>
+
+            <div class="menu-item dropdown">
+                <button class="menu-btn">
+                    USERS
+                    <span>&#10095;</span>
+                </button>
+                <div class="menu-subItems">
+                    <a href="#">User1</a>
+                </div>
+            </div>
+        </div>
+        <!-- hamburger menu end -->
 
 
+        <!-- notification start -->
+        <div class="notificationArea">
+            <div class="notifications">
+                <div class="notification unread">
+                    <div class="notificationContent">
+                        <p class="text">License for introduction to Algebra has been assigned to your school.</p>
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="notificationInfo">
+                        <span>Course : </span> Advanced Mathematics
+                    </p>
+                    <p class="dateTime">
+                        12-sep-2018 at 07:21 pm
+                    </p>
+                </div>
+
+                <div class="notification">
+                    <div class="notificationContent">
+                        <p class="text">License for introduction to Algebra has been assigned to your school.</p>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="notificationInfo">
+                        <span>Course : </span> Advanced Mathematics
+                    </p>
+                    <p class="dateTime">
+                        12-sep-2018 at 07:21 pm
+                    </p>
+                </div>
+
+                <div class="notification unread">
+                    <div class="notificationContent">
+                        <p class="text">License for introduction to Algebra has been assigned to your school.</p>
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="notificationInfo">
+                        <span>Course : </span> Advanced Mathematics
+                    </p>
+                    <p class="dateTime">
+                        12-sep-2018 at 07:21 pm
+                    </p>
+                </div>
+
+                <div class="notification">
+                    <div class="notificationContent">
+                        <p class="text">License for introduction to Algebra has been assigned to your school.</p>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="notificationInfo">
+                        <span>Course : </span> Advanced Mathematics
+                    </p>
+                    <p class="dateTime">
+                        12-sep-2018 at 07:21 pm
+                    </p>
+                </div>
+
+
+                <div class="notification">
+                    <div class="notificationContent">
+                        <p class="text">License for introduction to Algebra has been assigned to your school.</p>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="notificationInfo">
+                        <span>Course : </span> Advanced Mathematics
+                    </p>
+                    <p class="dateTime">
+                        12-sep-2018 at 07:21 pm
+                    </p>
+                </div>
+
+                <div class="notification unread">
+                    <div class="notificationContent">
+                        <p class="text">License for introduction to Algebra has been assigned to your school.</p>
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="notificationInfo">
+                        <span>Course : </span> Advanced Mathematics
+                    </p>
+                    <p class="dateTime">
+                        12-sep-2018 at 07:21 pm
+                    </p>
+                </div>
+
+                <div class="notification unread">
+                    <div class="notificationContent">
+                        <p class="text">License for introduction to Algebra has been assigned to your school.</p>
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="notificationInfo">
+                        <span>Course : </span> Advanced Mathematics
+                    </p>
+                    <p class="dateTime">
+                        12-sep-2018 at 07:21 pm
+                    </p>
+                </div>
+
+                <div class="notification">
+                    <div class="notificationContent">
+                        <p class="text">License for introduction to Algebra has been assigned to your school.</p>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="notificationInfo">
+                        <span>Course : </span> Advanced Mathematics
+                    </p>
+                    <p class="dateTime">
+                        12-sep-2018 at 07:21 pm
+                    </p>
+                </div>
+
+                <div class="notification">
+                    <div class="notificationContent">
+                        <p class="text">License for introduction to Algebra has been assigned to your school.</p>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="notificationInfo">
+                        <span>Course : </span> Advanced Mathematics
+                    </p>
+                    <p class="dateTime">
+                        12-sep-2018 at 07:21 pm
+                    </p>
+                </div>
+            </div>
+            <div class="notificationBtn">
+                Show All
+            </div>
+        </div>
+        <!-- notification end -->
+
+
+        <!-- Announcement Area start -->
+        <div class="announcementArea">
+            <div class="announcements">
+
+                <div class="announcement unread">
+                    <div class="announcementCreater">
+                        <p> <span>PA :</span> Wilsone Kumar</p>
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="announcementText">No classes will be held on 21st Nov</p>
+                    <div class="announcementInfo">
+                        <p>2 files are attached</p>
+                        <p class="dateTime">
+                            12-sep-2018 at 07:21 pm
+                        </p>
+                    </div>
+                </div>
+                <div class="announcement unread">
+                    <div class="announcementCreater">
+                        <p> <span>PA :</span> Wilsone Kumar</p>
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="announcementText">No classes will be held on 21st Nov</p>
+                    <div class="announcementInfo">
+                        <p>2 files are attached</p>
+                        <p class="dateTime">
+                            12-sep-2018 at 07:21 pm
+                        </p>
+                    </div>
+                </div>
+                <div class="announcement">
+                    <div class="announcementCreater">
+                        <p> <span>PA :</span> Wilsone Kumar</p>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="announcementText">No classes will be held on 21st Nov</p>
+                    <div class="announcementInfo">
+                        <p>2 files are attached</p>
+                        <p class="dateTime">
+                            12-sep-2018 at 07:21 pm
+                        </p>
+                    </div>
+                </div>
+                <div class="announcement unread">
+                    <div class="announcementCreater">
+                        <p> <span>PA :</span> Wilsone Kumar</p>
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="announcementText">No classes will be held on 21st Nov</p>
+                    <div class="announcementInfo">
+                        <p>2 files are attached</p>
+                        <p class="dateTime">
+                            12-sep-2018 at 07:21 pm
+                        </p>
+                    </div>
+                </div>
+                <div class="announcement unread">
+                    <div class="announcementCreater">
+                        <p> <span>PA :</span> Wilsone Kumar</p>
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="announcementText">No classes will be held on 21st Nov</p>
+                    <div class="announcementInfo">
+                        <p>2 files are attached</p>
+                        <p class="dateTime">
+                            12-sep-2018 at 07:21 pm
+                        </p>
+                    </div>
+                </div>
+                <div class="announcement">
+                    <div class="announcementCreater">
+                        <p> <span>PA :</span> Wilsone Kumar</p>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="announcementText">No classes will be held on 21st Nov</p>
+                    <div class="announcementInfo">
+                        <p>2 files are attached</p>
+                        <p class="dateTime">
+                            12-sep-2018 at 07:21 pm
+                        </p>
+                    </div>
+                </div>
+                <div class="announcement unread">
+                    <div class="announcementCreater">
+                        <p> <span>PA :</span> Wilsone Kumar</p>
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="announcementText">No classes will be held on 21st Nov</p>
+                    <div class="announcementInfo">
+                        <p>2 files are attached</p>
+                        <p class="dateTime">
+                            12-sep-2018 at 07:21 pm
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="announcementBtns">
+                <div class="announcementBtn right-border">SHOW ALL</div>
+                <div class="announcementBtn">CREAT NEW</div>
+            </div>
+        </div>
+        <!-- Announcement Area end -->
+
+        <!-- Content Start -->
         <div class="content">
-            
+
             <div class="tabbar">
                 <div class="tab active-black">
                     <div class="center-div">
@@ -71,7 +369,7 @@
                     Showing 4 of 4 courses
                 </div>
                 <div class="right-result">
-                    Sort By : 
+                    Sort By :
                     <select name="course" id="course">
                         <option value="Course Name">Course Name</option>
                     </select>
@@ -79,29 +377,30 @@
                 </div>
             </div>
 
-            
-                <div class="card-display">
 
-                </div>
-
-                <div class="menu">
-                    <a href="#" class="right-border">About</a>
-                    <a href="#">Contect Us</a>
-                </div>
-
+            <div class="card-display">
             </div>
+        </div>
+        <!-- Content End  -->
 
+        <div class="menu">
+            <a href="#" class="rightBorder">About</a>
+            <a href="#">Contect Us</a>
+        </div>
 
-        <!-- Footer -->
-        
+        <!-- Footer Start  -->
+
         <div class="footer">
             <img src="assets/icons/logo used in footer.svg" class="footer-logo logo-img">
-           <p> Copyright @ 2020-2021 Zeus Systems Pvt. Ltd.  All right reserved</p>
+            <p> Copyright @ 2020-2021 Zeus Systems Pvt. Ltd. All right reserved</p>
         </div>
+
+        <!-- Footer End -->
     </div>
 </body>
 
 <script src="script/hamburgermenu.js"></script>
 <!-- <script src="script/dashboard.js"></script> -->
 <script src="./script/index.js"></script>
+
 </html>

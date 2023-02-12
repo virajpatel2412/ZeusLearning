@@ -1,13 +1,25 @@
+body {
+  height: 100vh;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
 
+.container {
+  height: 100%;
+}
+
 /* header style */
 .header {
   height: 56px;
+  background: transparent url("/assets/headerPatternImage.png") 0% 0% padding-box;
+  mix-blend-mode: overlay;
+  opacity: 1;
   background-color: black;
+  z-index: 2;
 }
 .header .left {
   float: left;
@@ -24,8 +36,6 @@
   height: 100%;
   display: flex;
   align-items: center;
-  right: 24px;
-  margin-right: 24px;
 }
 .header .right .navbar {
   display: flex;
@@ -34,6 +44,7 @@
   height: 100%;
   align-items: center;
   justify-content: space-around;
+  margin-right: 24px;
 }
 .header .right .navbar a {
   color: #3FD28B;
@@ -47,21 +58,33 @@
 }
 .header .right .icon-link-div {
   display: flex;
-  align-items: center;
+  height: 100%;
 }
 .header .right .icon-link-div a {
   margin-left: 32px;
 }
 .header .right .icon-link-div div {
   position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+.header .right .hamburger-icon {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 24px;
 }
 .header .right span {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: -8px;
-  right: -8px;
+  top: 7px;
+  right: 8px;
   width: 17px;
   height: 21px;
   -webkit-clip-path: circle();
@@ -78,36 +101,238 @@
 @media screen and (max-width: 860px) {
   .header .right .navbar {
     display: none;
-    position: absolute;
-    right: 0;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    top: 56px;
-    background-color: black;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 50px;
-    padding: 0;
-    padding-bottom: 20px;
-  }
-  .header .right .icon-link-div {
-    margin-right: 32px;
   }
 }
 @media screen and (min-width: 861px) {
-  .header .right .hamburgmenu {
+  .header .right .hamburger-icon {
     display: none;
+    z-index: 1;
+  }
+  .header .right .icon-link-div {
+    margin-right: 8px;
   }
   .header .right .navbar {
     display: flex !important;
   }
 }
 
+.hamburger-menu {
+  height: -moz-max-content;
+  height: max-content;
+  position: absolute;
+  width: 280px;
+  right: 16px;
+  background-color: white;
+  box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.2392156863);
+  z-index: 1;
+  transition: all 0.2s;
+  transform: scaleY(0);
+}
+.hamburger-menu .menu-item button {
+  width: 100%;
+  height: 48px;
+  border: none;
+  padding-left: 16px;
+  padding-right: 24px;
+  background-color: transparent;
+  text-align: left;
+  color: #1F7A54;
+}
+.hamburger-menu span {
+  display: none;
+}
+.hamburger-menu .dropdown span {
+  display: block;
+  float: right;
+  rotate: 90deg;
+}
+.hamburger-menu .dropdown .menu-subItems {
+  display: none;
+  height: 0px;
+  font-size: 14px;
+  padding-left: 32px;
+}
+.hamburger-menu .dropdown .menu-subItems a {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: 100%;
+  text-decoration: none;
+  color: #1F7A54;
+}
+
+.notificationArea {
+  position: absolute;
+  width: 315px;
+  max-height: 582px;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+  box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.2392156863);
+  right: 188px;
+  color: black;
+  font-size: 14px;
+  z-index: 1;
+  transform: scaleY(0);
+  transition: all 0.2s;
+}
+.notificationArea .notifications::-webkit-scrollbar {
+  width: 4px;
+}
+.notificationArea .notifications::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.38);
+  border-radius: 6px;
+}
+.notificationArea .notifications::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.notificationArea .notifications {
+  max-height: 534px;
+  overflow-y: scroll;
+}
+.notificationArea .unread {
+  background-color: #FFFFEE;
+}
+.notificationArea .notification {
+  padding: 16px;
+}
+.notificationArea .notification .notificationContent {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+.notificationArea .notification .notificationContent p {
+  width: 260px;
+}
+.notificationArea .notification .notificationContent i {
+  width: 15px;
+  float: right;
+  color: #1F7A54;
+}
+.notificationArea .notification .notificationInfo {
+  font-size: 12px;
+  color: #222222;
+  padding-bottom: 8px;
+}
+.notificationArea .notification .notificationInfo span {
+  color: #686868;
+}
+.notificationArea .notification .dateTime {
+  text-align: right;
+  font-size: 12px;
+  color: #686868;
+}
+.notificationArea .notificationBtn {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1F7A54;
+  font-weight: bold;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: white 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2392156863);
+  border-radius: 0px 0px 2px 2px;
+  opacity: 1;
+}
+
+@media screen and (min-width: 861px) {
+  .notificationArea {
+    right: 125px;
+  }
+}
+.announcementArea {
+  position: absolute;
+  width: 315px;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: 582px;
+  right: 136px;
+  color: #222222;
+  font-size: 14px;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  z-index: 1;
+  transition: all 0.2s;
+  transform: scaleY(0);
+}
+.announcementArea .announcements::-webkit-scrollbar {
+  width: 4px;
+}
+.announcementArea .announcements::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.38);
+  border-radius: 6px;
+}
+.announcementArea .announcements::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.announcementArea .announcements {
+  max-height: 534px;
+  overflow-y: scroll;
+}
+.announcementArea .announcements .announcement {
+  padding: 16px;
+}
+.announcementArea .announcements .announcement .announcementCreater {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  font-size: 12px;
+}
+.announcementArea .announcements .announcement .announcementCreater span {
+  color: #686868;
+}
+.announcementArea .announcements .announcement .announcementCreater i {
+  width: 15px;
+  float: right;
+  font-size: 14px;
+  color: #1F7A54;
+}
+.announcementArea .announcements .announcement .announcementText {
+  padding-bottom: 8px;
+}
+.announcementArea .announcements .announcement .announcementInfo {
+  font-size: 12px;
+  color: #686868;
+}
+.announcementArea .announcements .announcement .announcementInfo .dateTime {
+  text-align: right;
+}
+.announcementArea .announcementBtns {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2392156863);
+  border-radius: 0px 0px 2px 2px;
+  opacity: 1;
+  font-weight: bold;
+}
+.announcementArea .announcementBtns .right-border {
+  border-right: 1px solid rgba(0, 0, 0, 0.1215686275);
+}
+.announcementArea .announcementBtns .announcementBtn {
+  width: 50%;
+  text-align: center;
+  color: #1F7A54;
+  padding: 6px;
+}
+.announcementArea .unread {
+  background-color: #FFFFEE;
+}
+
+@media screen and (min-width: 861px) {
+  .announcementArea {
+    right: 71px;
+  }
+}
 /*  Content */
 .content {
   background-color: #EEEEEE;
   padding: 24px 24px 16px 24px;
+  background-color: #EEEEEE;
+  min-height: calc(100% - 164px);
+  justify-content: center;
 }
 .content .tabbar {
   height: 64px;
@@ -235,10 +460,10 @@
 .content .card-display .card .card-icons {
   grid-column: 1/3;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: 1px solid rgba(0, 0, 0, 0.1803921569);
-  padding-top: 18px;
-  margin-right: 24px;
+  padding: 18px 24px 0 24px;
+  margin: 0px 24px;
   align-items: center;
 }
 .content .card-display .card .card-icons button {
@@ -261,21 +486,24 @@
     margin-right: auto;
   }
 }
-.content .menu {
+
+.menu {
   display: flex;
+  width: 100%;
   justify-content: center;
-  bottom: 5px;
-  margin: 32px auto 0 auto;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  background-color: #EEEEEE;
+  font-weight: bold;
 }
-.content .menu a {
+.menu a {
   text-decoration: none;
   color: #1F7A54;
   font-size: 14px;
-  margin: 0 5px;
-  font-weight: bold;
-  padding-right: 8px;
+  padding: 0 8px;
 }
-.content .menu .right-border {
+.menu .rightBorder {
   border-right: 1px solid rgba(0, 0, 0, 0.1215686275);
 }
 
