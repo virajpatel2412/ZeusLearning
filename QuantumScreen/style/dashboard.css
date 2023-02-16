@@ -127,6 +127,7 @@ body {
   z-index: 1;
   transition: all 0.2s;
   transform: scaleY(0);
+  transform-origin: top;
 }
 .hamburger-menu .menu-item button {
   width: 100%;
@@ -174,6 +175,7 @@ body {
   font-size: 14px;
   z-index: 1;
   transform: scaleY(0);
+  transform-origin: top;
   transition: all 0.2s;
 }
 .notificationArea .notifications::-webkit-scrollbar {
@@ -256,6 +258,7 @@ body {
   z-index: 1;
   transition: all 0.2s;
   transform: scaleY(0);
+  transform-origin: top;
 }
 .announcementArea .announcements::-webkit-scrollbar {
   width: 4px;
@@ -473,6 +476,7 @@ body {
 }
 .content .card-display .card .card-icons .card-btn-enable {
   opacity: 1;
+  cursor: pointer;
 }
 @media screen and (max-width: 1090px) {
   .content .card-display {

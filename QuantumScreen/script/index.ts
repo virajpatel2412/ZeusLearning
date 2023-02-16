@@ -50,10 +50,10 @@ let renderCard = () => {
                         </div>
                     </div>
                     <div class="card-icons">
-                        <button ${data.optionButton.preview ? 'disabled class="card-btn-enable"' : ''}> <img style="height: 24px; width: 22px;" src="assets/icons/preview.svg" alt="" srcset=""></button>
-                        <button ${data.optionButton.manageCourse ? 'disabled class="card-btn-enable"' : ''}> <img style="height: 18px; width: 16px;" src="assets/icons/manage course.svg" alt="" srcset=""></button>
-                        <button ${data.optionButton.gradeSubmissions ? 'disabled class="card-btn-enable"' : ''}> <img style="height: 20px; width: 16px;" src="assets/icons/grade submissions.svg" alt="" srcset=""></button>
-                        <button ${data.optionButton.reports ? 'disabled class="card-btn-enable"' : ''}> <img style="height: 24px; width: 22px;" src="assets/icons/reports.svg" alt="" srcset=""></button>
+                        <button ${data.optionButton.preview ? 'disabled class="card-btn-enable"' : ''}> <img src="assets/icons/preview.svg" alt="" srcset=""></button>
+                        <button ${data.optionButton.manageCourse ? 'disabled class="card-btn-enable"' : ''}> <img src="assets/icons/manage course.svg" alt="" srcset=""></button>
+                        <button ${data.optionButton.gradeSubmissions ? 'disabled class="card-btn-enable"' : ''}> <img src="assets/icons/grade submissions.svg" alt="" srcset=""></button>
+                        <button ${data.optionButton.reports ? 'disabled class="card-btn-enable"' : ''}> <img src="assets/icons/reports.svg" alt="" srcset=""></button>
                     </div>
                     `
 

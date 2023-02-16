@@ -156,7 +156,7 @@ body{
     z-index: 1;
     transition: all .2s ;
     transform: scaleY(0); 
-    // transform: translateY(-(calc(130%)));
+    transform-origin: top;
 
     .menu-item {
         button {
@@ -214,7 +214,8 @@ body{
     color: black;
     font-size: 14px;
     z-index: 1;
-    transform: scaleY(0);  
+    transform: scaleY(0);
+    transform-origin: top;  
     transition: all 0.2s;  
 
     .notifications::-webkit-scrollbar {
@@ -314,6 +315,7 @@ body{
     z-index: 1;
     transition: all .2s;
     transform: scaleY(0);
+    transform-origin: top;
 
     .announcements::-webkit-scrollbar {
         width: 4px;
@@ -563,6 +565,7 @@ body{
 
                 .card-btn-enable {
                     opacity: 1;
+                    cursor: pointer;
                 }
             }
         }
