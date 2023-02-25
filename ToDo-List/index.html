@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <title>ToDo</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Recipes</h1>
+        <div class="recipes">
+            
+        </div>
+
+        <form>
+            <input required type="text" name="message" id="message" placeholder="Enter Recipy">
+            <input type="submit" value="ADD">
+        </form>
+
+        <button class="disable-update">
+            Unsubscribe from changes
+        </button>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+
+<script>
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyAqhI9FhMSsBtv2kkMXA6frQjDPAFmTSNg",
+        authDomain: "fir-todolist-1e293.firebaseapp.com",
+        projectId: "fir-todolist-1e293",
+        storageBucket: "fir-todolist-1e293.appspot.com",
+        messagingSenderId: "651412496799",
+        appId: "1:651412496799:web:1eda4f0e1256d622a4ddaa",
+        measurementId: "G-6Y1E4VFC13"
+    }; 
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    // const analytics = getAnalytics(app);
+</script >
+<script src="script/index.js"></script>
+</html>
