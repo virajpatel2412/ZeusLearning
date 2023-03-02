@@ -1,0 +1,32 @@
+<div class='announcement-icon' (mouseover)="showAnnouncement()" (mouseleave)="hideAnnouncement()">
+    <img src="assets/icons/announcements.svg" alt="">
+    <span class="dark-badge">1</span>
+</div>
+
+<div class="announcementArea" (mouseover)="showAnnouncement()" (mouseleave)="hideAnnouncement()">
+    <div class="announcements">
+        
+        <div *ngFor="let announcement of announcements">
+            <div class="announcement" [ngClass]="{'unread':!announcement.read}">
+                <div class="announcementCreater">
+                    <p> <span>PA :</span> {{announcement.PA}} </p>
+                    <i class="fa" [ngClass]="{'fa-check-circle': announcement.read, 'fa-minus-circle': !announcement.read}" aria-hidden="true"></i>
+                </div>
+                <p class="announcementText"> {{announcement.title}} </p>
+                <div class="announcementInfo">
+                    <p *ngIf="announcement.files">{{announcement.files}} files are attached</p>
+                    <p *ngIf="announcement.course"> Course : {{announcement.course}} </p>
+                    <p class="dateTime">
+                        {{announcement.date}} at {{announcement.time}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="announcementBtns">
+        <div class="announcementBtn right-border">SHOW ALL</div>
+        <div class="announcementBtn">CREAT NEW</div>
+    </div>
+</div>

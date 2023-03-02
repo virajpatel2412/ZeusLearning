@@ -1,0 +1,27 @@
+@import '../../../../variables';
+
+.profile-icon {
+    position: relative;
+    padding: 0 16px;
+
+    .light-badge {
+        font-size: 8px;
+        background-color: white;
+        color: $darkTextColor;
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -9px;
+        right: 9px;
+        width: 17px;
+        height: 21px;
+        clip-path: circle();
+        font-size: 12px;
+        background-color: $badgeBackGround;
+        color: white;
+    }
+}

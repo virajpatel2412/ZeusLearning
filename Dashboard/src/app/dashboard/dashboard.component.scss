@@ -1,0 +1,123 @@
+@import '../../variables';
+@import '../utility';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    height: 100vh;
+}
+.container{
+    height: 100%;
+}
+
+
+/*  Content */
+.content {
+    background-color: $bgColor;
+    padding: 24px 24px 16px 24px;
+    background-color: $bgColor;
+    min-height: calc(100% - 164px);
+    justify-content: center;
+        
+    .tabbar {
+        height: 64px;
+        width: 100%;
+        background-color: $bgTabColor;
+        display: flex;
+        justify-content: space-around;
+
+        .active-black {
+            border-bottom: 4px solid black;
+        }
+
+        .tab {
+            display: block;
+            align-items: center;
+            font-size: 16px;
+            line-height: 100%;
+            width: 100%;
+
+            div>span {
+                padding: 0 5px;
+                margin-left: 16px;
+            }
+        }
+    }
+
+
+    .result {
+        display: flex;
+        justify-content: space-between;
+        height: 45px;
+        margin: 24px 0;
+        color: $lightTextColor;
+        border-bottom: 1px solid $borderColor;
+
+        .left-result {
+            align-self: center;
+        }
+
+        .right-result {
+            display: flex;
+            align-items: flex-start;
+
+            #course {
+                border: none;
+                background-color: transparent;
+                font-size: 16px;
+                width: 154px;
+                margin-right: 24px;
+            }
+
+            .sort-icon {
+                width: 12px;
+                height: 24px;
+            }
+        }
+    }
+
+    .card-display {
+        margin: 16px 0;
+        width: 100%;
+        display: grid;
+        column-gap: 24px;
+        row-gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+        grid-auto-flow: dense;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 1090px) {
+        .card-display {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+    }
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    background-color: $bgColor;
+    font-weight: bold;
+
+    a {
+        text-decoration: none;
+        color: $bottomMenuColor;
+        font-size: 14px;
+        padding: 0 8px;
+    }
+
+    .rightBorder {
+        border-right: 1px solid $borderColor;
+    }
+}

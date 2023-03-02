@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header start-->
+        <app-header></app-header>
+        <!-- Header End  -->
+
+        <!-- Content Start -->
+        <div class="content">
+
+            <div class="tabbar">
+                <div class="tab active-black">
+                    <div class="center-div">
+                        <img style="width: 21px; height: 32px;" src="assets/icons/courses.svg" alt="">
+                        <span style="font-size: 24px;" class="bold" id="courseCount"></span>Courses
+                    </div>
+                </div>
+                <div class="tab">
+                    <div class="center-div">
+                        <img style="width: 21px; height: 32px;" src="assets/icons/classes.svg" alt="">
+                        <span style="font-size: 24px;" class="bold">4</span>Classes
+                    </div>
+                </div>
+            </div>
+
+            <div class="result">
+                <div class="left-result">
+                    Showing 4 of 4 courses
+                </div>
+                <div class="right-result">
+                    Sort By :
+                    <select name="course" id="course">
+                        <option value="Course Name">Course Name</option>
+                    </select>
+                    <img class="sort-icon" src="assets/icons/sort.svg" alt="">
+                </div>
+            </div>
+
+            <app-course-list class="card-display"></app-course-list>
+            
+        </div>
+        <!-- Content End  -->
+
+        <div class="menu">
+            <a href="#" class="rightBorder">About</a>
+            <a href="#">Contect Us</a>
+        </div>
+
+        <!-- Footer Start  -->
+        <app-footer></app-footer>
+        <!-- Footer End -->
+    </div>
+</body>
+
+<script src="script/hamburgermenu.js"></script>
+<!-- <script src="script/dashboard.js"></script> -->
+<script src="./script/index.js"></script>
+
+</html>

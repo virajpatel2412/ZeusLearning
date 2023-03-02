@@ -1,0 +1,97 @@
+{
+    "no_of_courses": 4,
+    "courses": [
+        {
+            "title": "Acceleration",
+            "subject": "Physics",
+            "grade": "7 +2",
+            "units": 4,
+            "lessons": 18,
+            "topics": 24,
+            "classOption": [
+                "Mr. Frank's Class B",
+                "No Classes",
+                "All Classes"
+            ],
+            "students": 50,
+            "startDate": "21-Jan-2020",
+            "endDate": "21-Aug-2020",
+            "profilePic": "/assets/images/imageMask.png",
+            "isFavorite": true,
+            "preview": true,
+            "manageCourse": true,
+            "gradeSubmissions": true,
+            "reports": true,
+            "isAlive": true
+        },
+        {
+            "title": "Displacement, Velocity and Speed",
+            "subject": "Physics 2",
+            "grade": "6 +3",
+            "units": 2,
+            "lessons": 15,
+            "topics": 20,
+            "classOption": [
+                "No Classes",
+                "All Classes",
+                "Mr. Frank's Class B"
+            ],
+            "students": 0,
+            "startDate": "",
+            "endDate": "",
+            "profilePic": "/assets/images/imageMask-1.png",
+            "isFavorite": true,
+            "preview": true,
+            "manageCourse": false,
+            "gradeSubmissions": false,
+            "reports": true,
+            "isAlive": true
+        },
+        {
+            "title": "Introduction to Biology: Microorganisms and how they affect",
+            "subject": "Biology",
+            "grade": "4 +1",
+            "units": 5,
+            "lessons": 16,
+            "topics": 22,
+            "classOption": [
+                "All Classes",
+                "Mr. Frank's Class B",
+                "No Classes"
+            ],
+            "students": 500,
+            "startDate": "",
+            "endDate": "",
+            "profilePic": "/assets/images/imageMask-3.png",
+            "isFavorite": true,
+            "preview": true,
+            "manageCourse": false,
+            "gradeSubmissions": false,
+            "reports": true,
+            "isAlive": true
+        },
+        {
+            "title": "Introduction to High School Mathematics",
+            "subject": "Mathematics",
+            "grade": "8 +3",
+            "units": 0,
+            "lessons": 0,
+            "topics": 0,
+            "classOption": [
+                "Mr. Frank's Class A",
+                "No Classes",
+                "All Classes"
+            ],
+            "students": 44,
+            "startDate": "14-Oct-2019",
+            "endDate": "20-Oct-2020",
+            "profilePic": "/assets/images/imageMask-2.png",
+            "isFavorite": false,
+            "preview": false,
+            "manageCourse": true,
+            "gradeSubmissions": true,
+            "reports": true,
+            "isAlive": false
+        }
+    ]
+}

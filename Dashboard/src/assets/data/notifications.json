@@ -1,0 +1,46 @@
+{
+    "notifications":[
+        {
+            "title": "License for introduction to Algebra has been assigned to your school.",
+            "course": "Advanced Mathematics",
+            "date": "12-sep-2018",
+            "time": "07:21 pm",
+            "read": false
+        },
+        {
+            "title": "Lesson 3 Practice Worksheet overdue for Amy Santiago",
+            "course": "Advanced Mathematics",
+            "date": "15-sep-2018",
+            "time": "05:21 pm",
+            "read": true
+        },
+        {
+            "title": "23 new students created",
+            "course": "",
+            "date": "14-sep-2018",
+            "time": "01:21 pm",
+            "read": false
+        },
+        {
+            "title": "15 submissions ready for evaluation",
+            "course": "Class: Basics of Algebra",
+            "date": "13-sep-2018",
+            "time": "01:15 pm",
+            "read": false
+        },
+        {
+            "title": "License for Basic Concepts in Geometry has been assigned to your... school",
+            "course": "",
+            "date": "15-sep-2018",
+            "time": "07:21 pm",
+            "read": false
+        },
+        {
+            "title": "Lesson 3 Practice Worksheet overdue for Sam Diego",
+            "course": "Advanced Mathematics",
+            "date": "12-sep-2018",
+            "time": "07:21 pm",
+            "read": true
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+<div class="card">
+    <span *ngIf="!course.isAlive" class="expireTag">EXPIRED</span>
+    <img src="{{course.profilePic}}" class="card-img">
+    <div class="details">
+        <div class="space-between mb-7">
+            <p class="detail-heading bold dark">{{course.title}}</p>
+            <img *ngIf="course.isFavorite" src="assets/icons/favourite.svg">
+        </div>
+
+        <div class="sub-info">
+            <p style="color: hsl(0, 0%, 40%); font-size: 12px;" class="mb-7"> 
+                <span style="margin-right: 15px;">{{course.subject}}</span>
+                Grade <span style="color: #1F7A54;">{{course.grade}}</span>
+            </p>
+            <p *ngIf="course.units!==0" style="color: #666666; font-size: 12px;" class="mb-18"> 
+                <span class="dark bold">{{course.units}}</span> Units <span class="dark bold">{{course.lessons}}</span>
+                lessons <span class="dark bold">{{course.topics}}</span> topics
+            </p>
+        </div>
+
+        <div class="teacher-info">
+            <div class="space-between">
+                <select name="class" class="class">
+                    <option *ngFor="let option of course.classOption" value="{{option}}">{{option}}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="course-info">
+            <span *ngIf="course.students !== 0" style="margin-right: 17px;">{{course.students}} Students</span>
+            <span *ngIf="course.startDate !== ''">{{course.startDate}} - {{course.endDate}}</span>
+        </div>
+    </div>
+    <div class="card-icons">
+        <button [disabled]="!course.preview" class="card-btn"> 
+            <img src="assets/icons/preview.svg">
+        </button>
+
+        <button [disabled]="!course.manageCourse" class="card-btn">
+            <img src="assets/icons/manage course.svg">
+        </button>
+
+        <button [disabled]="!course.gradeSubmissions" class="card-btn"> 
+            <img src="assets/icons/grade submissions.svg">
+        </button>
+
+        <button [disabled]="!course.reports" class="card-btn">
+            <img src="assets/icons/reports.svg">
+        </button>
+    </div>
+</div>

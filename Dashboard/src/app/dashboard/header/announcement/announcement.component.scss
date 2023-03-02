@@ -1,0 +1,119 @@
+@import '../../../../variables';
+
+.announcement-icon {
+    position: relative;
+    padding: 0 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 8px;
+        right: 9px;
+        width: 17px;
+        height: 21px;
+        clip-path: circle();
+        font-size: 12px;
+        background-color: $badgeBackGround;
+        color: white;
+    }
+}
+
+.announcementArea {
+    position: absolute;
+    width: 315px;
+    height: max-content;
+    max-height: 582px;
+    top: 56px;
+    right: 136px;
+    color: $darkTextColor;
+    font-size: 14px;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+    z-index: 1;
+    transition: all .2s;
+    transform: scaleY(0);
+    transform-origin: top;
+
+    .announcements::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .announcements::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.38);
+        border-radius: 6px;
+    }
+
+    .announcements::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .announcements {
+        max-height: 534px;
+        overflow-y: scroll;
+
+        .announcement {
+            padding: 16px;
+
+            .announcementCreater {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 8px;
+                font-size: 12px;
+
+                span {
+                    color: $lightTextColor;
+                }
+                i{
+                    width: 15px;
+                    float: right;
+                    font-size: 14px;
+                    color: $bottomMenuColor;
+                }
+            }
+            .announcementText{
+                padding-bottom: 8px;
+            }
+            .announcementInfo{
+                font-size: 12px;
+                color: $lightTextColor;
+
+                .dateTime{
+                    text-align:right;
+                }
+            }
+        }
+
+    }
+    .announcementBtns{
+        height: 48px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 1px 6px #0000003D;
+        border-radius: 0px 0px 2px 2px;
+        opacity: 1;
+        font-weight: bold;
+
+        .right-border{
+            border-right: 1px solid $borderColor;
+        }
+        .announcementBtn{
+            width: 50%;
+            text-align: center;
+            color: $bottomMenuColor;
+            padding: 6px;
+        }
+    }
+    .unread {
+        background-color: $unreadnotificationBgColor;
+    }
+}
+@media screen and (min-width: 861px) {
+    .announcementArea{
+        right: 71px;
+    }
+}

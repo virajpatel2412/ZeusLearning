@@ -1,0 +1,51 @@
+<div class="hamburger-icon" (mouseover)="displayMenu()" (mouseleave)="hideMenu()">
+    <img src="assets/icons/hamburger-menu.svg" alt="menu">
+</div>
+
+<div class="hamburger-menu" (mouseover)="displayMenu()" (mouseleave)="hideMenu()">
+    <div class="menu-item">
+        <button class="menu-btn">
+            DASHBOARD
+            <span>&#10095;</span>
+        </button>
+    </div>
+
+    <div class="menu-item dropdown">
+        <button class="menu-btn">
+            CONTENT
+            <span>&#10095;</span>
+        </button>
+        <div class="menu-subItems">
+            <a href="#">COURSE CATALOG</a>
+            <a href="#">COURSE CATALOG</a>
+            <a href="#">COURSE CATALOG</a>
+        </div>
+    </div>
+
+    <div class="menu-item dropdown">
+        <button class="menu-btn">
+            USERS
+            <span>&#10095;</span>
+        </button>
+        <div class="menu-subItems">
+            <a href="#">User1</a>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <button class="menu-btn">
+            ADMIN
+            <span>&#10095;</span>
+        </button>
+    </div>
+
+    <div class="menu-item dropdown">
+        <button class="menu-btn">
+            USERS
+            <span>&#10095;</span>
+        </button>
+        <div class="menu-subItems">
+            <a href="#">User1</a>
+        </div>
+    </div>
+</div>

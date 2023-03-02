@@ -1,0 +1,12 @@
+<div class="notification" [ngClass]="{'unread': !notification.read}">
+    <div class="notificationContent">
+        <p class="text">{{notification.title}}</p>
+        <i class="fa" [ngClass]="{'fa-check-circle': notification.read, 'fa-minus-circle': !notification.read}" aria-hidden="true"></i>
+    </div>
+    <p *ngIf="notification.course != ''" class="notificationInfo">
+        <span>Course : </span> {{notification.course}}
+    </p>
+    <p class="dateTime">
+        {{notification.date}} at {{notification.time}}
+    </p>
+</div>
