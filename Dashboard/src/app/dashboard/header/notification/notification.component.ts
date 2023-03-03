@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { Notification, NotificationObject } from 'src/assets/interfaces';
-// import { val } from ''
 
 @Component({
   selector: 'app-notification',
